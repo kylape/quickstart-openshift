@@ -1,6 +1,6 @@
 {
   "AWSTemplateFormatVersion" : "2010-09-09",
-  "Description" : "RedHat OpenShift CloudFormation Template",
+  "Description" : "QS(0022) RedHat OpenShift CloudFormation Template",
   "Metadata" : {
   "AWS::CloudFormation::Interface" : {
     "ParameterGroups" : [
