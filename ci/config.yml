@@ -17,8 +17,5 @@ global:
  
 tests:
   quickstart-openshiftt1:
-    template_file: quickstart-openshift-example1.template
-    parameter_input: quickstart-openshift-exampleparms1.json
-  quickstart-openshiftt2:
-    template_file: quickstart-openshift-example2.template
-    parameter_input: quickstart-openshift-exampleparms2.json
+    template_file: quickstart-openshift.template
+    parameter_input: quickstart-openshift.json
