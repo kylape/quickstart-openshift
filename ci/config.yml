@@ -4,7 +4,6 @@ global:
   marketplace-ami: false
   reporting: true
   regions:
-    - us-west-1
     - ap-northeast-1
     - ap-northeast-2
     - ap-southeast-1
