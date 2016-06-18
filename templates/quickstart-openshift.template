@@ -1,6 +1,6 @@
 {
   "AWSTemplateFormatVersion" : "2010-09-09",
-  "Description" : "QS(0022) RedHat OpenShift CloudFormation Template",
+  "Description" : "RedHat OpenShift CloudFormation Template",
   "Metadata" : {
   "AWS::CloudFormation::Interface" : {
     "ParameterGroups" : [
@@ -93,28 +93,26 @@
   },
    "Mappings" : {
     "AWSRegion2RHELAMI" : {
-    "us-east-1"      :{"64" : "ami-2051294a" },
-    "us-west-1"      :{"64" : "ami-d1315fb1" },
-    "us-west-2"      :{"64" : "ami-775e4f16" },
-    "eu-west-1"      :{"64" : "ami-8b8c57f8" },
-    "eu-central-1"   :{"64" : "ami-875042eb" },
-    "ap-northeast-1" :{"64" : "ami-0dd8f963" },
-    "ap-northeast-2" :{"64" : "ami-44db152a" },
-    "ap-southeast-1" :{"64" : "ami-3f03c55c" },
-    "ap-southeast-2" :{"64" : "ami-e0c19f83" },
-    "sa-east-1"      :{"64" : "ami-27b3094b" }
+      "ap-northeast-1":   { "64": "ami-0dd8f963" },
+      "ap-southeast-2":   { "64": "ami-e0c19f83" },
+      "eu-west-1":        { "64": "ami-8b8c57f8" },
+      "ap-southeast-1":   { "64": "ami-3f03c55c" },
+      "us-east-1":        { "64": "ami-2051294a" },
+      "us-west-2":        { "64": "ami-775e4f16" },
+      "us-west-1":        { "64": "ami-d1315fb1" },
+      "eu-central-1":     { "64": "ami-875042eb" },
+      "sa-east-1":        { "64": "ami-27b3094b" }
    },
    "AWSRegion2FedoraAMI" : {
-   "us-east-1"      :{"64" : "ami-8bd138e6" },
-   "us-west-2"      :{"64" : "ami-013dc161" },
-   "us-west-1"      :{"64" : "ami-0194ea61" },
-   "eu-west-1"      :{"64" : "ami-02d86471" },
-   "eu-central-1"   :{"64" : "ami-0071906f" },
-   "ap-northeast-1" :{"64" : "ami-07687869" },
-   "ap-northeast-2" :{"64" : "ami-44db152a" },
-   "ap-southeast-1" :{"64" : "ami-00e82763" },
-   "ap-southeast-2" :{"64" : "ami-002d0c63" },
-   "sa-east-1"      :{"64" : "ami-0a64e866" }
+     "us-east-1":        { "64": "ami-7b8afa11" },
+     "ap-northeast-1":   { "64": "ami-b4193cda" },
+     "eu-west-1":        { "64": "ami-080bd47b" },
+     "ap-southeast-1":   { "64": "ami-9cba7dff" },
+     "ap-southeast-2":   { "64": "ami-90d887f3" },
+     "us-west-2":        { "64": "ami-20203441" },
+     "us-west-1":        { "64": "ami-a6fc90c6" },
+     "eu-central-1":     { "64": "ami-084d5e64" },
+     "sa-east-1":        { "64": "ami-e908b085" }
   }
    },
 
