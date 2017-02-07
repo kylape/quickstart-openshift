@@ -270,7 +270,7 @@
                 "sudo ./awscli-bundle/install -i /usr/local/aws -b /usr/local/bin/aws \n",
                 "/usr/bin/rpm -e $(/usr/bin/rpm -qa | grep rhui) \n",
                 "yum clean all \n",
-                { "Fn::Join" : [ "", [ "subscription-manager register --username=", { "Ref" : "RedhatPortalUsername" }, " --password=", { "Ref" : "RedhatPortalPassword" }, " --autosubscribe --force", "\n" ] ] },
+                { "Fn::Join" : [ "", [ "subscription-manager register --username=", { "Ref" : "RedhatPortalUsername" }, " --password='", { "Ref" : "RedhatPortalPassword" }, "' --autosubscribe --force", "\n" ] ] },
                 "subscription-manager list --consumed > /var/log/redhat-subscription-details.log \n",
                 "subscription-manager repos --disable=* \n",
                 "subscription-manager repos --enable=rhel-7-server-rpms --enable=rhel-7-server-extras-rpms --enable=rhel-7-server-optional-rpms --enable=rhel-7-server-ose-3.2-rpms \n",
